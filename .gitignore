@@ -1,6 +1,15 @@
-﻿__pycache__/
+# Python
+__pycache__/
 *.pyc
 .venv/
+
+# Environment
 .env
+
+# Data (generated)
 data/raw/*.csv
 data/raw/*.json
+
+# OS
+.DS_Store
+Thumbs.db
