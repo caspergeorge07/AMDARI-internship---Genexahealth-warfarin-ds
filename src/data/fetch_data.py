@@ -13,14 +13,17 @@ OUT_CURATED = Path("data/curated")
 OUT_RAW.mkdir(parents=True, exist_ok=True)
 OUT_CURATED.mkdir(parents=True, exist_ok=True)
 
-# Replace these after you inspect /docs
+# 
+# Define endpoints mapping
 ENDPOINTS = {
-    # "patients": ("patients", OUT_RAW / "patients.json"),
-    # "genetics": ("genetics", OUT_RAW / "genetics.json"),
-    # "inr": ("inr", OUT_RAW / "inr.json"),
-    # "dosing": ("dosing", OUT_RAW / "dosing.json"),
-    # "curated_training": ("datasets/curated/training", OUT_CURATED / "training.csv"),
+    "genomics": ("genomics", OUT_RAW / "genomics.json"),
+    "clinical": ("clinical", OUT_RAW / "clinical.json"),
+    "lifestyle": ("lifestyle", OUT_RAW / "lifestyle.json"),
+    "outcomes": ("outcomes", OUT_RAW / "outcomes.json"),
+    "patient_ids": ("patient_ids", OUT_RAW / "patient_ids.json"),
 }
+
+
 
 def fetch(endpoint: str):
     url = BASE_URL.rstrip('/') + '/' + endpoint.lstrip('/')
