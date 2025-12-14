@@ -1,14 +1,7 @@
 # Python
 __pycache__/
 *.pyc
-.venv/
-
-# Environment
-.env
-
-# Data (generated)
-data/raw/*.csv
-data/raw/*.json
+.ipynb_checkpoints/
 
 # OS
 .DS_Store
