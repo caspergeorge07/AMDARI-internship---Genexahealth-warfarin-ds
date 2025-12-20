@@ -190,6 +190,8 @@ genexahealth-data/
 └── mlflow/
 └── README.md
 
+
+
 # 📊 Data & Feature Engineering
 
 ### Input Data
@@ -281,9 +283,17 @@ See `mlflow/README.md` for instructions to reproduce experiments locally.
 - Automatic SHAP explanation generation
 - Safe separation between user inputs and engineered features
 
-### How Stakeholders Can Test
-- The prototype can be exposed via a **temporary public Gradio link**
-- No Python or local setup required for reviewers
+🖥 Clinical Prototype Deployment
+Step 1 — Interactive app built in Gradio
+
+Reads clinical inputs → returns individual patient dose prediction
+No coding needed to test.
+
+Step 2 — Production hosting on Hugging Face
+
+Model → app.py + environment → Spaces build pipeline
+
+https://huggingface.co/spaces/caspergeorge07/genexahealth-warfarin-dose
 
 ---
 
@@ -325,5 +335,17 @@ pip install -r requirements.txt
 👤 Author
 
 Ndubuaku Casper Ekwueme
-Data Scientist Intern
+Data Scientist
 GenexaHealth Data Project
+
+🤝 Credits
+
+Author: Ndubuaku Casper Ekwueme
+MSc Data Scientist
+
+Contributions:
+  - API architecture
+  - Feature engineering
+  - ML pipeline
+  - Prototype deployment
+  - Explainability research
